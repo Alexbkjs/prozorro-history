@@ -1,0 +1,30 @@
+[project]
+name = "prozorro-history"
+version = "0.1.0"
+description = "Collects Prozorro.Sale auction history (failed and repeat auctions) and syncs it to Airtable for review."
+readme = "README.md"
+authors = [
+    { name = "Alex Baka" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "httpx>=0.28.1",
+    "pyairtable>=3.5.1",
+    "python-dotenv>=1.2.4",
+]
+
+[project.scripts]
+prozorro-history = "prozorro_history.cli:main"
+
+[build-system]
+requires = ["uv_build>=0.13.1,<0.14.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "pytest>=9.2.0",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
