@@ -1,0 +1,322 @@
+{
+  "_id": "6ac12d0dfa88b6d0eeb7ff82",
+  "_score": null,
+  "documents": [
+    {
+      "datePublished": "2026-10-03T16:27:57.178000Z",
+      "documentType": "illustration",
+      "_ds_scope": "public",
+      "format": "image/jpeg",
+      "index": 0,
+      "dateModified": "2026-10-03T16:27:57.178000Z",
+      "id": "75ac7917a85b4561a64c8400ab4a86e7",
+      "title": {
+        "uk_UA": "IMG_1937.jpeg"
+      },
+      "url": "https://procedure.prozorro.sale/api/documents/public/ab4f2a7cacd94d45b749c28075d45126",
+      "hash": "md5:10384f161b7a140aa913f915dfede5f8",
+      "documentOf": "auction",
+      "_ds_id": "ab4f2a7cacd94d45b749c28075d45126"
+    },
+    {
+      "datePublished": "2026-10-03T16:27:57.178000Z",
+      "documentType": "illustration",
+      "_ds_scope": "public",
+      "format": "image/jpeg",
+      "index": 1,
+      "dateModified": "2026-10-03T16:27:57.178000Z",
+      "id": "88ab81cec299488fa8e4be61311ca9fc",
+      "title": {
+        "uk_UA": "IMG_1939.jpeg"
+      },
+      "url": "https://procedure.prozorro.sale/api/documents/public/4a0da779eed043edadc541c4de399697",
+      "hash": "md5:cdec043529b02c5bd18b48bdf24cd05b",
+      "documentOf": "auction",
+      "_ds_id": "4a0da779eed043edadc541c4de399697"
+    },
+    {
+      "datePublished": "2026-10-03T16:27:57.179000Z",
+      "documentType": "illustration",
+      "_ds_scope": "public",
+      "format": "image/jpeg",
+      "index": 2,
+      "dateModified": "2026-10-03T16:27:57.179000Z",
+      "id": "3b4734154ace4a2188a93e9b62dcb6ee",
+      "title": {
+        "uk_UA": "IMG_1940.jpeg"
+      },
+      "url": "https://procedure.prozorro.sale/api/documents/public/0484156e6b934975bb0e675249b42a19",
+      "hash": "md5:0194e00b91f1a39db5089aeb8e951651",
+      "documentOf": "auction",
+      "_ds_id": "0484156e6b934975bb0e675249b42a19"
+    },
+    {
+      "datePublished": "2026-10-03T16:27:57.179000Z",
+      "documentType": "illustration",
+      "_ds_scope": "public",
+      "format": "image/jpeg",
+      "index": 3,
+      "dateModified": "2026-10-03T16:27:57.179000Z",
+      "id": "89e77c21a8be4bc888a42afae8dd29e6",
+      "title": {
+        "uk_UA": "IMG_1941.jpeg"
+      },
+      "url": "https://procedure.prozorro.sale/api/documents/public/8fc2519e4f4144fea9d9dd4d8c6a5865",
+      "hash": "md5:f726d18da03b44d7ec254e63fbd18179",
+      "documentOf": "auction",
+      "_ds_id": "8fc2519e4f4144fea9d9dd4d8c6a5865"
+    },
+    {
+      "datePublished": "2026-10-03T16:27:57.180000Z",
+      "documentType": "illustration",
+      "_ds_scope": "public",
+      "format": "image/jpeg",
+      "index": 4,
+      "dateModified": "2026-10-03T16:27:57.180000Z",
+      "id": "6d71f32681554f4d907b502ade145fd6",
+      "title": {
+        "uk_UA": "IMG_1942.jpeg"
+      },
+      "url": "https://procedure.prozorro.sale/api/documents/public/e248bf4b34bc41a2a2963bdcc9f1dffe",
+      "hash": "md5:1ebeef99f3f72365539c351882018fdd",
+      "documentOf": "auction",
+      "_ds_id": "e248bf4b34bc41a2a2963bdcc9f1dffe"
+    },
+    {
+      "datePublished": "2026-10-03T16:27:57.180000Z",
+      "documentType": "illustration",
+      "_ds_scope": "public",
+      "format": "image/jpeg",
+      "index": 5,
+      "dateModified": "2026-10-03T16:27:57.180000Z",
+      "id": "506ccae6061a4ed3b6f25efd18f10e33",
+      "title": {
+        "uk_UA": "IMG_1943.jpeg"
+      },
+      "url": "https://procedure.prozorro.sale/api/documents/public/16a55f7d69f3411da6a6b0c92d6a6469",
+      "hash": "md5:72cf00018b519374a89b51561851ceb1",
+      "documentOf": "auction",
+      "_ds_id": "16a55f7d69f3411da6a6b0c92d6a6469"
+    }
+  ],
+  "rectificationPeriod": {
+    "endDate": "2026-10-27T16:00:00.000000Z",
+    "startDate": "2026-10-03T16:27:57.181000Z"
+  },
+  "accessDetails": {
+    "uk_UA": "Інформація про представників для ознайомлення з лотом: 1. Директор ТОВ \"ГРУПА КОМПАНІЙ САПФІР\" Соложеніцин Богдан Володимирович Тел: +38 (095) 412-45-89; Е-mail: tovsapfirgroup@gmail.com"
+  },
+  "_protect_level": "high",
+  "bankAccounts": [
+    {
+      "accountType": "guarantee",
+      "accounts": [
+        {
+          "accountIdentifications": [
+            {
+              "scheme": "UA-IBAN",
+              "description": {
+                "en_US": "IBAN",
+                "uk_UA": "Номер банківського рахунку в форматі IBAN"
+              },
+              "id": "UA943005280000026007000050572"
+            }
+          ],
+          "accountHolder": {
+            "identifier": {
+              "legalName": {
+                "uk_UA": "ТОВ \"ГРУПА КОМПАНІЙ САПФІР\""
+              },
+              "scheme": "UA-EDR",
+              "id": "45680037"
+            },
+            "name": {
+              "uk_UA": "ТОВ \"ГРУПА КОМПАНІЙ САПФІР\""
+            }
+          },
+          "bankName": {
+            "uk_UA": "АТ «ОТП БАНК»"
+          },
+          "currency": "UAH",
+          "id": "1854be5e114f46bd8b1ee57e0234338f"
+        }
+      ]
+    }
+  ],
+  "questions": [],
+  "description": {
+    "uk_UA": "Молочний блок - нерухоме майно: нежиле приміщення, загальною площею 141,3 кв.м., адреса: Чернігівська обл., Сновський р., с. Кучинівка, вулиця Щорса, будинок 40б, приміщення 1, РНМ: 26712088"
+  },
+  "guarantee": {
+    "amount": 21985.0,
+    "currency": "UAH"
+  },
+  "_meta": {
+    "systemDateModified": "2026-11-01T18:00:03.529000Z"
+  },
+  "title": {
+    "uk_UA": "Продаж нерухомого майна : молочного блоку : нежитлове приміщення, загальною площею 141,3 кв.м., адреса: Чернігівська обл., Сновський р., с. Кучинівка, вулиця Щорса, будинок 40б, приміщення 1, РНМ: 26712088"
+  },
+  "contracts": [],
+  "questionPeriod": {
+    "endDate": "2026-11-01T16:00:00.000000Z",
+    "startDate": "2026-10-03T16:27:57.181000Z"
+  },
+  "archiveId": "6ae77e23537a69a9354646d9",
+  "_protected": false,
+  "enquiryPeriod": {
+    "endDate": "2026-11-01T16:00:00.000000Z",
+    "startDate": "2026-10-03T16:27:57.181000Z"
+  },
+  "sellingMethod": "commercialSell-english",
+  "valueAddedTaxCharged": false,
+  "auctionPeriod": {
+    "startDate": "2026-11-02T10:55:00.000000Z"
+  },
+  "value": {
+    "amount": 219857.0,
+    "valueAddedTaxIncluded": false,
+    "currency": "UAH"
+  },
+  "tenderPeriod": {
+    "endDate": "2026-11-01T18:00:00.000000Z",
+    "startDate": "2026-10-03T16:27:57.181000Z"
+  },
+  "owner": "zakupki.prom.ua",
+  "additionalInformation": [],
+  "minimalStep": {
+    "amount": 747.0,
+    "currency": "UAH"
+  },
+  "registrationFee": {
+    "amount": 510.0,
+    "currency": "UAH"
+  },
+  "dateModified": "2026-11-01T18:00:03.529000Z",
+  "lotId": "636",
+  "datePublished": "2026-10-03T16:27:57.176000Z",
+  "auctionId": "CSE001-UA-20261003-41261",
+  "cancellations": [],
+  "metaInfo": {
+    "directions": [
+      "commercialSell"
+    ],
+    "categories": [
+      "realEstateSale"
+    ],
+    "auctionTypes": [
+      "english"
+    ]
+  },
+  "sellingEntity": {
+    "identifier": {
+      "legalName": {
+        "uk_UA": "ТОВАРИСТВО З ОБМЕЖЕНОЮ ВІДПОВІДАЛЬНІСТЮ «ГРУПА КОМПАНІЙ САПФІР»"
+      },
+      "scheme": "UA-EDR",
+      "id": "45680037"
+    },
+    "address": {
+      "streetAddress": {
+        "uk_UA": "пр.Героїв Харкова будинок 160 квартира 63А"
+      },
+      "postalCode": "61061",
+      "locality": {
+        "uk_UA": "місто Харків"
+      },
+      "countryName": {
+        "uk_UA": "Україна"
+      },
+      "region": {
+        "uk_UA": "Харківська область"
+      },
+      "addressID": {
+        "scheme": "koatuu",
+        "name": {
+          "uk_UA": "ХАРКІВСЬКА ОБЛАСТЬ/М.ХАРКІВ"
+        },
+        "id": "6300000000"
+      }
+    },
+    "contactPoint": {
+      "name": {
+        "uk_UA": "Соложеніцин Богдан"
+      },
+      "telephone": "+380506574915",
+      "email": "vechirnizori2019@gmail.com"
+    },
+    "name": {
+      "uk_UA": "ТОВАРИСТВО З ОБМЕЖЕНОЮ ВІДПОВІДАЛЬНІСТЮ «ГРУПА КОМПАНІЙ САПФІР»"
+    },
+    "representativeInfo": "Протокол  установчих зборів засновників "
+  },
+  "minNumberOfQualifiedBids": 1,
+  "awards": [],
+  "tenderAttempts": 1,
+  "bids": [],
+  "items": [
+    {
+      "additionalClassifications": [
+        {
+          "scheme": "CPVS",
+          "description": {
+            "en_US": "Private",
+            "uk_UA": "Приватний"
+          },
+          "id": "DA04-3"
+        }
+      ],
+      "unit": {
+        "code": "MTK",
+        "name": {
+          "en_US": "square metre",
+          "uk_UA": "метри квадратні"
+        }
+      },
+      "quantity": 141.3,
+      "address": {
+        "streetAddress": {
+          "uk_UA": "Лугова вулиця"
+        },
+        "postalCode": "15252",
+        "locality": {
+          "uk_UA": "Кучинівка"
+        },
+        "countryName": {
+          "uk_UA": "Україна"
+        },
+        "region": {
+          "uk_UA": "Чернігівська область"
+        },
+        "addressID": {
+          "scheme": "koatuu",
+          "name": {
+            "uk_UA": "КУЧИНІВКА"
+          },
+          "id": "7425883001"
+        }
+      },
+      "commercialSellItemType": "assets",
+      "description": {
+        "uk_UA": "нерухоме майно: нежиле приміщення, загальною площею 141,3 кв.м., адреса: Чернігівська обл., Сновський р., с. Кучинівка, вулиця Щорса, будинок 40б, приміщення 1, РНМ: 26712088"
+      },
+      "location": {
+        "latitude": "51.7323600538",
+        "longitude": "31.8831825256"
+      },
+      "id": "0d5053dd00384c22bd3e65609ee621a7",
+      "registrationDetails": {
+        "registrationStatus": "notRegistered"
+      },
+      "classification": {
+        "scheme": "CAV",
+        "description": {
+          "en_US": "Real Estate",
+          "uk_UA": "Нерухоме майно"
+        },
+        "id": "04000000-8"
+      }
+    }
+  ],
+  "status": "unsuccessful"
+}

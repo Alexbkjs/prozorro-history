@@ -1,0 +1,656 @@
+{
+  "_id": "6ac35fce3354987aecda5c3c",
+  "_score": null,
+  "relatedOrganizations": {
+    "ownershipType": "municipal",
+    "propertyOwner": {
+      "identifier": {
+        "legalName": {
+          "uk_UA": "Ужгородська районна рада"
+        },
+        "scheme": "UA-EDR",
+        "id": "25435880"
+      },
+      "address": {
+        "streetAddress": {
+          "uk_UA": "вул. Загорська, 10"
+        },
+        "postalCode": "88017",
+        "locality": {
+          "uk_UA": "Ужгород"
+        },
+        "countryName": {
+          "uk_UA": "Україна"
+        },
+        "region": {
+          "uk_UA": "Закарпатська область"
+        },
+        "addressID": {
+          "scheme": "koatuu",
+          "name": {
+            "uk_UA": "УЖГОРОД"
+          },
+          "id": "2110100000"
+        }
+      },
+      "contactPoint": {
+        "name": {
+          "uk_UA": "Фрінцко Юрій Васильович"
+        },
+        "telephone": "+380312615895",
+        "email": "mail@uzh-rajrada.gov.ua"
+      },
+      "name": {
+        "uk_UA": "Ужгородська районна рада"
+      },
+      "representativeInfo": "Закон України \"Про місцеве самоврядування в Україні\""
+    },
+    "sellingEntity": {
+      "identifier": {
+        "legalName": {
+          "uk_UA": "Ужгородська районна рада"
+        },
+        "scheme": "UA-EDR",
+        "id": "25435880"
+      },
+      "address": {
+        "streetAddress": {
+          "uk_UA": "вул. Загорська, 10"
+        },
+        "postalCode": "88017",
+        "locality": {
+          "uk_UA": "м. Ужгород"
+        },
+        "countryName": {
+          "uk_UA": "Україна"
+        },
+        "region": {
+          "uk_UA": "Закарпатська область"
+        },
+        "addressID": {
+          "scheme": "koatuu",
+          "name": {
+            "uk_UA": "УЖГОРОД"
+          },
+          "id": "2110100000"
+        }
+      },
+      "contactPoint": {
+        "name": {
+          "uk_UA": "Фрінцко Юрій Васильович"
+        },
+        "telephone": "+380312615895",
+        "email": "mail@uzh-rajrada.gov.ua"
+      },
+      "name": {
+        "uk_UA": "Ужгородська районна рада"
+      },
+      "representativeInfo": "Закон України \"Про місцеве самоврядування в Україні\""
+    }
+  },
+  "documents": [
+    {
+      "datePublished": "2026-10-05T08:29:02.066000Z",
+      "documentType": "x_assessmentDocument",
+      "_ds_scope": "public",
+      "format": "application/pdf",
+      "dateModified": "2026-10-05T08:29:02.066000Z",
+      "id": "486f9879824f44f49ee10196f1336f20",
+      "title": {
+        "uk_UA": ".рішення 433.PDF"
+      },
+      "url": "https://procedure.prozorro.sale/api/documents/public/221cfec17cf442af9cdc836d0819ca59",
+      "hash": "md5:bab78776e3a99490345be88f1d7c986a",
+      "documentOf": "auction",
+      "_ds_id": "221cfec17cf442af9cdc836d0819ca59"
+    },
+    {
+      "datePublished": "2026-10-05T08:29:02.067000Z",
+      "documentType": "x_approvedDocument",
+      "_ds_scope": "public",
+      "format": "application/pdf",
+      "dateModified": "2026-10-05T08:29:02.067000Z",
+      "id": "525010dab9a64fbbb80fcbd8a282253b",
+      "title": {
+        "uk_UA": ".рішення 434.PDF"
+      },
+      "url": "https://procedure.prozorro.sale/api/documents/public/ecd1bc8dbf0f4fbe9d8bc027257de056",
+      "hash": "md5:713cd4c10650d3debc6d93ac1fa82f11",
+      "documentOf": "auction",
+      "_ds_id": "ecd1bc8dbf0f4fbe9d8bc027257de056"
+    },
+    {
+      "datePublished": "2026-10-05T08:29:02.067000Z",
+      "documentType": "contractProforma",
+      "_ds_scope": "public",
+      "format": "application/msword",
+      "dateModified": "2026-10-05T08:29:02.067000Z",
+      "id": "5a71ca2d2b92454da3a05b7f2cd3a7f3",
+      "title": {
+        "uk_UA": "ТИПОВИЙ ДОГОВІР оренди.doc"
+      },
+      "url": "https://procedure.prozorro.sale/api/documents/public/f8644c2cffa14fc88bc90f5f2a859ab9",
+      "hash": "md5:6ec51fbb0fc9fcb898a94ee5a2794d69",
+      "documentOf": "auction",
+      "_ds_id": "f8644c2cffa14fc88bc90f5f2a859ab9"
+    },
+    {
+      "datePublished": "2026-10-05T08:29:02.067000Z",
+      "documentType": "x_itemPlan",
+      "_ds_scope": "public",
+      "format": "application/pdf",
+      "dateModified": "2026-10-05T08:29:02.067000Z",
+      "id": "7e0e11a26c194090aa094f8a320c5e67",
+      "title": {
+        "uk_UA": "Поверховий план.pdf"
+      },
+      "url": "https://procedure.prozorro.sale/api/documents/public/d4fe44757cc24551a063dc0b464c8b1c",
+      "hash": "md5:7a6b9615bb1bc0bba9c41807854bbd24",
+      "documentOf": "auction",
+      "_ds_id": "d4fe44757cc24551a063dc0b464c8b1c"
+    },
+    {
+      "datePublished": "2026-10-05T08:29:02.068000Z",
+      "documentType": "x_approvedDocument",
+      "_ds_scope": "public",
+      "format": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+      "dateModified": "2026-10-05T08:29:02.068000Z",
+      "id": "e0969042e050408e9b1fb0f93bc9794a",
+      "title": {
+        "uk_UA": "Оголошення.docx"
+      },
+      "url": "https://procedure.prozorro.sale/api/documents/public/4eeea02cef3e42e49ae9b2f38e10d2e8",
+      "hash": "md5:9c0287d3a5d098d56b73b1b3e3efc9b6",
+      "documentOf": "auction",
+      "_ds_id": "4eeea02cef3e42e49ae9b2f38e10d2e8"
+    },
+    {
+      "datePublished": "2026-10-05T08:29:02.068000Z",
+      "documentType": "illustration",
+      "_ds_scope": "public",
+      "format": "image/jpeg",
+      "dateModified": "2026-10-05T08:29:02.068000Z",
+      "id": "a9aad34a81764f46be156c1241fcac1a",
+      "title": {
+        "uk_UA": "фасад 4.jpeg"
+      },
+      "url": "https://procedure.prozorro.sale/api/documents/public/66c1d2d3e9df4397a68f409feface41a",
+      "hash": "md5:a9690999558d37ebf45a19f1d1bb9942",
+      "documentOf": "auction",
+      "_ds_id": "66c1d2d3e9df4397a68f409feface41a"
+    },
+    {
+      "datePublished": "2026-10-05T08:29:02.069000Z",
+      "documentType": "illustration",
+      "_ds_scope": "public",
+      "format": "image/jpeg",
+      "dateModified": "2026-10-05T08:29:02.069000Z",
+      "id": "2bf11472e99b4b47875d43cc3ee9a0db",
+      "title": {
+        "uk_UA": "27.jpeg"
+      },
+      "url": "https://procedure.prozorro.sale/api/documents/public/3af7f77502d44956884d2e8cc5e2c5ce",
+      "hash": "md5:0b8f10172cffd798e71da8d0b095a893",
+      "documentOf": "auction",
+      "_ds_id": "3af7f77502d44956884d2e8cc5e2c5ce"
+    },
+    {
+      "datePublished": "2026-10-05T08:29:02.069000Z",
+      "documentType": "illustration",
+      "_ds_scope": "public",
+      "format": "image/jpeg",
+      "dateModified": "2026-10-05T08:29:02.069000Z",
+      "id": "3f0e46bd1a2a457a974bc7d6283f9815",
+      "title": {
+        "uk_UA": "17.jpeg"
+      },
+      "url": "https://procedure.prozorro.sale/api/documents/public/0cdb8bbd298140e9a5d13765b20c1696",
+      "hash": "md5:d0fdd22c5d00bdfb125902fc8f196951",
+      "documentOf": "auction",
+      "_ds_id": "0cdb8bbd298140e9a5d13765b20c1696"
+    },
+    {
+      "datePublished": "2026-10-05T08:29:02.070000Z",
+      "documentType": "illustration",
+      "_ds_scope": "public",
+      "format": "image/jpeg",
+      "dateModified": "2026-10-05T08:29:02.070000Z",
+      "id": "80f3512b438843ba9eec280aa01ee19d",
+      "title": {
+        "uk_UA": "1.jpeg"
+      },
+      "url": "https://procedure.prozorro.sale/api/documents/public/7fdc9b51d70946f88520dec6f51ab519",
+      "hash": "md5:fbd142320b9654b0d252b7c61b498918",
+      "documentOf": "auction",
+      "_ds_id": "7fdc9b51d70946f88520dec6f51ab519"
+    },
+    {
+      "datePublished": "2026-10-05T08:29:02.070000Z",
+      "documentType": "illustration",
+      "_ds_scope": "public",
+      "format": "image/jpeg",
+      "dateModified": "2026-10-05T08:29:02.070000Z",
+      "id": "8863c589a5024e248e85703969ce997f",
+      "title": {
+        "uk_UA": "3.jpeg"
+      },
+      "url": "https://procedure.prozorro.sale/api/documents/public/cc0c36eb4c1c43f39b445123b994dab2",
+      "hash": "md5:c0d6cc9b2f75869c0f93bfa565c16ae3",
+      "documentOf": "auction",
+      "_ds_id": "cc0c36eb4c1c43f39b445123b994dab2"
+    },
+    {
+      "datePublished": "2026-10-05T08:29:02.070000Z",
+      "documentType": "illustration",
+      "_ds_scope": "public",
+      "format": "image/jpeg",
+      "dateModified": "2026-10-05T08:29:02.070000Z",
+      "id": "cdf465e95b2c40a1ac7ae17c7aaba09d",
+      "title": {
+        "uk_UA": "6.jpeg"
+      },
+      "url": "https://procedure.prozorro.sale/api/documents/public/a86c9744eb6e4fe8b5ad615404499acf",
+      "hash": "md5:c632229a09f8c75a7a25c840f053076a",
+      "documentOf": "auction",
+      "_ds_id": "a86c9744eb6e4fe8b5ad615404499acf"
+    },
+    {
+      "datePublished": "2026-10-05T08:29:02.071000Z",
+      "documentType": "illustration",
+      "_ds_scope": "public",
+      "format": "image/jpeg",
+      "dateModified": "2026-10-05T08:29:02.071000Z",
+      "id": "d74f469931654fac951be84c36eb03ed",
+      "title": {
+        "uk_UA": "10.jpeg"
+      },
+      "url": "https://procedure.prozorro.sale/api/documents/public/19cbbd1b9fcc4fd2b5cb3ec1ec5737f4",
+      "hash": "md5:cde1067cae58a1bb4a14baa1472c184b",
+      "documentOf": "auction",
+      "_ds_id": "19cbbd1b9fcc4fd2b5cb3ec1ec5737f4"
+    },
+    {
+      "datePublished": "2026-10-05T08:29:02.071000Z",
+      "documentType": "illustration",
+      "_ds_scope": "public",
+      "format": "image/jpeg",
+      "dateModified": "2026-10-05T08:29:02.071000Z",
+      "id": "0f75abcf9815428f8bddb2a4689df6e0",
+      "title": {
+        "uk_UA": "12.jpeg"
+      },
+      "url": "https://procedure.prozorro.sale/api/documents/public/6468e6eb3cdd4a4a803c07e3b529bb21",
+      "hash": "md5:ce184c6b5300790d86065982ef26f3f6",
+      "documentOf": "auction",
+      "_ds_id": "6468e6eb3cdd4a4a803c07e3b529bb21"
+    },
+    {
+      "datePublished": "2026-10-05T08:29:02.071000Z",
+      "documentType": "illustration",
+      "_ds_scope": "public",
+      "format": "image/jpeg",
+      "dateModified": "2026-10-05T08:29:02.071000Z",
+      "id": "b87d6d27573c4f1b9436a519afd3529e",
+      "title": {
+        "uk_UA": "15.jpeg"
+      },
+      "url": "https://procedure.prozorro.sale/api/documents/public/17c87e5d5ebd4a03aa1b64ba830b9192",
+      "hash": "md5:da8e7dd29cb0dd8ab8e95f8c73a324ce",
+      "documentOf": "auction",
+      "_ds_id": "17c87e5d5ebd4a03aa1b64ba830b9192"
+    }
+  ],
+  "rectificationPeriod": {
+    "endDate": "2026-10-06T15:00:00.000000Z",
+    "startDate": "2026-10-05T08:29:02.075000Z"
+  },
+  "accessDetails": {
+    "uk_UA": "Час та місце ознайомлення з об’єктом: ознайомитися з об’єктом можна за місцем його розташування у робочі дні, попередньо узгодивши з представником організатора аукціону годину огляду об’єкта за телефоном: +380505159065 з 10.00 до 15.00 у робочі дні.\r\nКонтактна особа: Шелельо Віктор Борисович, тел. +380505159065."
+  },
+  "_protect_level": "medium",
+  "bankAccounts": [
+    {
+      "accountType": "registrationFee",
+      "id": "d61e61bace614594951c56615264c1d6",
+      "accounts": [
+        {
+          "accountIdentifications": [
+            {
+              "scheme": "UA-IBAN",
+              "description": {
+                "en_US": "IBAN",
+                "uk_UA": "Номер банківського рахунку в форматі IBAN"
+              },
+              "id": "UA188999980314060593000007286"
+            }
+          ],
+          "accountHolder": {
+            "identifier": {
+              "legalName": {
+                "uk_UA": "ГУДПС в Закарпатській області"
+              },
+              "scheme": "UA-EDR",
+              "id": "37975895"
+            },
+            "name": {
+              "uk_UA": "ГУДПС в Закарпатській області"
+            }
+          },
+          "description": {
+            "uk_UA": "Код платежу - 24060300"
+          },
+          "bankName": {
+            "uk_UA": "Казначейство України"
+          },
+          "currency": "UAH",
+          "id": "2d67a9b188f14e7185dc8d9a97b64b55"
+        }
+      ]
+    },
+    {
+      "accountType": "guarantee",
+      "id": "f2b534a9c40e43648ea9d677d49b9c7f",
+      "accounts": [
+        {
+          "accountIdentifications": [
+            {
+              "scheme": "UA-IBAN",
+              "description": {
+                "en_US": "IBAN",
+                "uk_UA": "Номер банківського рахунку в форматі IBAN"
+              },
+              "id": "UA188999980314060593000007286"
+            }
+          ],
+          "accountHolder": {
+            "identifier": {
+              "legalName": {
+                "uk_UA": "ГУДПС в Закарпатській області"
+              },
+              "scheme": "UA-EDR",
+              "id": "37975895"
+            },
+            "name": {
+              "uk_UA": "ГУДПС в Закарпатській області"
+            }
+          },
+          "description": {
+            "uk_UA": "Код платежу - 24060300"
+          },
+          "bankName": {
+            "uk_UA": "Казначейство України"
+          },
+          "currency": "UAH",
+          "id": "1176a521cdc34853b61a3f2c379f4099"
+        }
+      ]
+    },
+    {
+      "accountType": "advancePayment",
+      "id": "4df901cf3ad840058dedf2d7f61a5be3",
+      "accounts": [
+        {
+          "accountIdentifications": [
+            {
+              "scheme": "UA-IBAN",
+              "description": {
+                "en_US": "IBAN",
+                "uk_UA": "Номер банківського рахунку в форматі IBAN"
+              },
+              "id": "UA168999980334199871000007286"
+            }
+          ],
+          "accountHolder": {
+            "identifier": {
+              "legalName": {
+                "uk_UA": "ГУДПС в Закарпатській області"
+              },
+              "scheme": "UA-EDR",
+              "id": "37975895"
+            },
+            "name": {
+              "uk_UA": "ГУДПС в Закарпатській області"
+            }
+          },
+          "description": {
+            "uk_UA": "Код платежу - 24060300"
+          },
+          "bankName": {
+            "uk_UA": "Казначейство України"
+          },
+          "currency": "UAH",
+          "id": "3f74f32f11284b6690f36289a44854ec"
+        }
+      ]
+    },
+    {
+      "accountType": "lease",
+      "id": "b7846eb666664cfc91288f5fd2c5d60d",
+      "accounts": [
+        {
+          "accountIdentifications": [
+            {
+              "scheme": "UA-IBAN",
+              "description": {
+                "en_US": "IBAN",
+                "uk_UA": "Номер банківського рахунку в форматі IBAN"
+              },
+              "id": "UA168999980334199871000007286"
+            }
+          ],
+          "accountHolder": {
+            "identifier": {
+              "legalName": {
+                "uk_UA": "ГУДПС в Закарпатській області"
+              },
+              "scheme": "UA-EDR",
+              "id": "37975895"
+            },
+            "name": {
+              "uk_UA": "ГУДПС в Закарпатській області"
+            }
+          },
+          "description": {
+            "uk_UA": "Код платежу - 24060300"
+          },
+          "bankName": {
+            "uk_UA": "Казначейство України"
+          },
+          "currency": "UAH",
+          "id": "69b4b955d6d5473ca7b4738feae9bca1"
+        }
+      ]
+    }
+  ],
+  "questions": [],
+  "discount": {
+    "discountPercent": 50.0,
+    "discount": true,
+    "previousAuctionValue": {
+      "amount": 35599.61,
+      "valueAddedTaxIncluded": true,
+      "currency": "UAH"
+    }
+  },
+  "_meta": {
+    "systemDateModified": "2026-11-01T18:00:03.574000Z"
+  },
+  "description": {
+    "uk_UA": "Вбудовані нежитлові приміщення поз. 90, поз. 91, поз. 92, поз. 93, поз. 94, поз. 95 та поз. 96 загальною площею 83,9 м2 знаходяться на другому поверсі двоповерхової будівлі за адресою: Закарпатська обл., м. Ужгород, вул. Минайська, 40. Технічний стан - добрий. Приміщення мають компактні площі, що забезпечують можливість їх використання як окремих функціональних зон (кабінетів). Доступ до об'єкта оренди здйснюється через вхід загального користування. Будівля забезпечена інженерними комунікаціями, зокрема: електропостачанням, водопостачанням, каналізацією."
+  },
+  "guarantee": {
+    "amount": 35599.61,
+    "currency": "UAH"
+  },
+  "questionPeriod": {
+    "endDate": "2026-11-01T16:00:00.000000Z",
+    "startDate": "2026-10-05T08:29:02.075000Z"
+  },
+  "title": {
+    "uk_UA": "Передача в оренду вбудованих нежитлових приміщень поз. 90, поз. 91, поз. 92, поз. 93, поз. 94, поз. 95 та поз. 96 загальною площею 83,9 м2 за адресою: Закарпатська обл., м. Ужгород, вул. Минайська, 40"
+  },
+  "contracts": [],
+  "listType": "First",
+  "calcOnBookValue": false,
+  "archiveId": "6ae77e231370f7240ac13dd2",
+  "_protected": true,
+  "enquiryPeriod": {
+    "endDate": "2026-11-01T16:00:00.000000Z",
+    "startDate": "2026-10-05T08:29:02.075000Z"
+  },
+  "sellingMethod": "legitimatePropertyLease-english",
+  "valueAddedTaxCharged": false,
+  "auctionPeriod": {
+    "startDate": "2026-11-02T09:30:00.000000Z"
+  },
+  "previousAuctionId": "LLE001-UA-20260831-68690",
+  "tenderPeriod": {
+    "endDate": "2026-11-01T18:00:00.000000Z",
+    "startDate": "2026-10-06T15:00:00.000000Z"
+  },
+  "value": {
+    "amount": 17799.81,
+    "valueAddedTaxIncluded": false,
+    "currency": "UAH"
+  },
+  "owner": "vsi.trade",
+  "additionalInformation": [],
+  "minimalStep": {
+    "amount": 178.0,
+    "currency": "UAH"
+  },
+  "registrationFee": {
+    "amount": 864.7,
+    "currency": "UAH"
+  },
+  "registryId": "6a1d4c44ca21e7963f28b8c5",
+  "dateModified": "2026-11-01T18:00:03.574000Z",
+  "registryObjectId": "RGL001-UA-20260601-01742",
+  "leaseDuration": "P5Y0M0D",
+  "datePublished": "2026-10-05T08:29:02.051000Z",
+  "cancellations": [],
+  "auctionId": "LLE001-UA-20261005-41838",
+  "leaseRules": {
+    "intendedUseRestrictionMethod": "noRestrictions"
+  },
+  "disqualifiedBids": [],
+  "metaInfo": {
+    "directions": [
+      "legitimatePropertyLease"
+    ],
+    "categories": [
+      "realEstateLease"
+    ],
+    "auctionTypes": [
+      "english"
+    ]
+  },
+  "martialLawDisclaimer": false,
+  "valuePeriod": "month",
+  "minNumberOfQualifiedBids": 1,
+  "awards": [],
+  "tenderAttempts": 2,
+  "bids": [],
+  "items": [
+    {
+      "additionalClassifications": [
+        {
+          "scheme": "CPVS",
+          "description": {
+            "en_US": "For real estate law",
+            "uk_UA": "З питань законодавства у сфері нерухомості"
+          },
+          "id": "QB29-3"
+        },
+        {
+          "scheme": "CPVS",
+          "description": {
+            "en_US": "Hire",
+            "uk_UA": "Оренда"
+          },
+          "id": "PA01-7"
+        }
+      ],
+      "reProps": {
+        "serviceAirConditioning": false,
+        "itemPropsType": "realEstate",
+        "serviceAutonomousHeating": false,
+        "servicePhone": false,
+        "serviceSecurityAlarm": false,
+        "serviceFireAlarm": false,
+        "generalCondition": "Добрий",
+        "serviceVentilation": false,
+        "serviceInternet": false,
+        "totalBuildingArea": 4704.4,
+        "serviceSewerage": true,
+        "totalObjectArea": 83.9,
+        "floors": "2",
+        "serviceGas": false,
+        "usableArea": 83.9,
+        "serviceElectricity": true,
+        "serviceHeatingCounter": false,
+        "locationInBuilding": "aboveGround",
+        "serviceTV": false,
+        "serviceElevator": false,
+        "serviceCentralHeating": false,
+        "serviceWater": true
+      },
+      "unit": {
+        "code": "MTK",
+        "name": {
+          "en_US": "square metre",
+          "uk_UA": "метри квадратні"
+        }
+      },
+      "itemType": "realEstate",
+      "quantity": 83.9,
+      "address": {
+        "streetAddress": {
+          "uk_UA": "Минайська, 40"
+        },
+        "postalCode": "88015",
+        "locality": {
+          "uk_UA": "Ужгород"
+        },
+        "countryName": {
+          "uk_UA": "Україна"
+        },
+        "region": {
+          "uk_UA": "Закарпатська область"
+        },
+        "addressID": {
+          "scheme": "koatuu",
+          "name": {
+            "uk_UA": "УЖГОРОД"
+          },
+          "id": "2110100000"
+        }
+      },
+      "description": {
+        "uk_UA": "Вбудовані нежитлові приміщення поз. 90, поз. 91, поз. 92, поз. 93, поз. 94, поз. 95 та поз. 96 загальною площею  83,9 м2 знаходяться на другому поверсі двоповерхової будівлі  за адресою: Закарпатська обл., м. Ужгород, вул. Минайська, 40. Технічний стан - добрий. Приміщення мають компактні площі, що забезпечують можливість їх використання як окремих функціональних зон (кабінетів). Доступ до об'єкта оренди здйснюється через вхід загального користування. Будівля забезпечена інженерними комунікаціями, зокрема: електропостачанням, водопостачанням, каналізацією. "
+      },
+      "location": {
+        "latitude": "50.45569658969145",
+        "longitude": "30.347081244942956"
+      },
+      "id": "649481067d044eaea69687f1e31f2272",
+      "registrationDetails": {
+        "registrationStatus": "oldRegistration",
+        "registrationID": "909895",
+        "registrationDate": "2003-08-28T09:14:57.000000Z"
+      },
+      "classification": {
+        "scheme": "CAV",
+        "description": {
+          "en_US": "Real Estate",
+          "uk_UA": "Нерухоме майно"
+        },
+        "id": "04000000-8"
+      },
+      "title": {
+        "uk_UA": "Вбудовані нежитлові приміщення поз. 90, поз. 91, поз. 92, поз. 93, поз. 94, поз. 95 та поз. 96 загальною площею  83,9 м2 за адресою: Закарпатська обл., м. Ужгород, вул. Минайська, 40"
+      }
+    }
+  ],
+  "status": "unsuccessful"
+}
