@@ -1,0 +1,396 @@
+{
+  "_id": "6ac76e8560b17fbff5758fc1",
+  "_score": null,
+  "documents": [
+    {
+      "documentType": "illustration",
+      "_ds_scope": "public",
+      "format": "image/jpeg",
+      "description": {
+        "uk_UA": "Долин.5а _.jpg"
+      },
+      "index": 0,
+      "dateModified": "2026-10-08T10:20:53.455000Z",
+      "language": "",
+      "title": {
+        "uk_UA": "Долин.5а _.jpg"
+      },
+      "url": "https://procedure.prozorro.sale/api/documents/public/e9b65fe03613410c83c5076129a46c1c",
+      "datePublished": "2026-10-08T10:20:53.455000Z",
+      "id": "e9b65fe03613410c83c5076129a46c1c",
+      "hash": "md5:c4b2257c0ca78740de13f1975ad39feb",
+      "documentOf": "auction",
+      "_ds_id": "e9b65fe03613410c83c5076129a46c1c"
+    },
+    {
+      "documentType": "illustration",
+      "_ds_scope": "public",
+      "format": "image/jpeg",
+      "description": {
+        "uk_UA": "Долин.5а_.jpg"
+      },
+      "index": 1,
+      "dateModified": "2026-10-08T10:20:53.456000Z",
+      "language": "",
+      "title": {
+        "uk_UA": "Долин.5а_.jpg"
+      },
+      "url": "https://procedure.prozorro.sale/api/documents/public/517de02e9923490298cc0d865002da47",
+      "datePublished": "2026-10-08T10:20:53.456000Z",
+      "id": "517de02e9923490298cc0d865002da47",
+      "hash": "md5:d9dbc8593a69a30a5d1fb17ff3432ce1",
+      "documentOf": "auction",
+      "_ds_id": "517de02e9923490298cc0d865002da47"
+    },
+    {
+      "documentType": "illustration",
+      "_ds_scope": "public",
+      "format": "image/jpeg",
+      "description": {
+        "uk_UA": "изображение_viber_2022-02-22_18-21-03-152.jpg"
+      },
+      "index": 2,
+      "dateModified": "2026-10-08T10:20:53.456000Z",
+      "language": "",
+      "title": {
+        "uk_UA": "изображение_viber_2022-02-22_18-21-03-152.jpg"
+      },
+      "url": "https://procedure.prozorro.sale/api/documents/public/4bfbf99f9a3c41008f69fb1ee39898e6",
+      "datePublished": "2026-10-08T10:20:53.456000Z",
+      "id": "4bfbf99f9a3c41008f69fb1ee39898e6",
+      "hash": "md5:15a15f7d6f72dd2ae53ad713f233658b",
+      "documentOf": "auction",
+      "_ds_id": "4bfbf99f9a3c41008f69fb1ee39898e6"
+    },
+    {
+      "documentType": "illustration",
+      "_ds_scope": "public",
+      "format": "image/jpeg",
+      "description": {
+        "uk_UA": "изображение_viber_2025-10-15_16-34-26-063.jpg"
+      },
+      "index": 3,
+      "dateModified": "2026-10-08T10:20:53.456000Z",
+      "language": "",
+      "title": {
+        "uk_UA": "изображение_viber_2025-10-15_16-34-26-063.jpg"
+      },
+      "url": "https://procedure.prozorro.sale/api/documents/public/14ad1e24d26d455a86807eae9b56f63c",
+      "datePublished": "2026-10-08T10:20:53.456000Z",
+      "id": "14ad1e24d26d455a86807eae9b56f63c",
+      "hash": "md5:06c73d38d8bf116d230a43df56e4be3d",
+      "documentOf": "auction",
+      "_ds_id": "14ad1e24d26d455a86807eae9b56f63c"
+    },
+    {
+      "documentType": "illustration",
+      "_ds_scope": "public",
+      "format": "image/jpeg",
+      "description": {
+        "uk_UA": "изображение_viber_2025-10-15_16-34-26-162.jpg"
+      },
+      "index": 4,
+      "dateModified": "2026-10-08T10:20:53.457000Z",
+      "language": "",
+      "title": {
+        "uk_UA": "изображение_viber_2025-10-15_16-34-26-162.jpg"
+      },
+      "url": "https://procedure.prozorro.sale/api/documents/public/8e9a0acafd0d4ecea5216f8d4865f7bc",
+      "datePublished": "2026-10-08T10:20:53.457000Z",
+      "id": "8e9a0acafd0d4ecea5216f8d4865f7bc",
+      "hash": "md5:326e8d1c7940e808a855b6659a454a60",
+      "documentOf": "auction",
+      "_ds_id": "8e9a0acafd0d4ecea5216f8d4865f7bc"
+    },
+    {
+      "documentType": "illustration",
+      "_ds_scope": "public",
+      "format": "image/jpeg",
+      "description": {
+        "uk_UA": "изображение_viber_2025-10-15_16-34-16-808.jpg"
+      },
+      "index": 5,
+      "dateModified": "2026-10-08T10:20:53.457000Z",
+      "language": "",
+      "title": {
+        "uk_UA": "изображение_viber_2025-10-15_16-34-16-808.jpg"
+      },
+      "url": "https://procedure.prozorro.sale/api/documents/public/38eff5a107a14a8f8e340a755cfc7725",
+      "datePublished": "2026-10-08T10:20:53.457000Z",
+      "id": "38eff5a107a14a8f8e340a755cfc7725",
+      "hash": "md5:14a8f2796c6a18455eaf50a2a476222b",
+      "documentOf": "auction",
+      "_ds_id": "38eff5a107a14a8f8e340a755cfc7725"
+    },
+    {
+      "documentType": "illustration",
+      "_ds_scope": "public",
+      "format": "image/jpeg",
+      "description": {
+        "uk_UA": "Долинская,5а_.jpg"
+      },
+      "index": 6,
+      "dateModified": "2026-10-08T10:20:53.458000Z",
+      "language": "",
+      "title": {
+        "uk_UA": "Долинская,5а_.jpg"
+      },
+      "url": "https://procedure.prozorro.sale/api/documents/public/0a17a01fe4134b339ce13b626c8c37e3",
+      "datePublished": "2026-10-08T10:20:53.458000Z",
+      "id": "0a17a01fe4134b339ce13b626c8c37e3",
+      "hash": "md5:a3ba09bb98d8f1d67d4be1dd9ef1fc2c",
+      "documentOf": "auction",
+      "_ds_id": "0a17a01fe4134b339ce13b626c8c37e3"
+    },
+    {
+      "documentType": "technicalSpecifications",
+      "_ds_scope": "public",
+      "format": "application/pdf",
+      "description": {
+        "uk_UA": "Техничний паспорт.pdf"
+      },
+      "index": 0,
+      "dateModified": "2026-10-08T10:20:53.458000Z",
+      "language": "",
+      "title": {
+        "uk_UA": "Техничний паспорт.pdf"
+      },
+      "url": "https://procedure.prozorro.sale/api/documents/public/46adfe8d06f549bdbeb3960c9e52f596",
+      "datePublished": "2026-10-08T10:20:53.458000Z",
+      "id": "46adfe8d06f549bdbeb3960c9e52f596",
+      "hash": "md5:661c904f3e08c8187da346fb15d5e672",
+      "documentOf": "auction",
+      "_ds_id": "46adfe8d06f549bdbeb3960c9e52f596"
+    }
+  ],
+  "rectificationPeriod": {
+    "endDate": "2026-10-27T16:00:00.000000Z",
+    "startDate": "2026-10-08T10:20:53.459000Z"
+  },
+  "accessDetails": {
+    "uk_UA": "Ознайомлення з лотом з 10:00 до 17:00, з попереднім погодженням з контактною особою: Тетяна, тел. 380957733997"
+  },
+  "_protect_level": "high",
+  "bankAccounts": [
+    {
+      "accountType": "guarantee",
+      "accounts": [
+        {
+          "accountIdentifications": [
+            {
+              "scheme": "UA-IBAN",
+              "description": {
+                "en_US": "IBAN",
+                "uk_UA": "Номер банківського рахунку в форматі IBAN"
+              },
+              "id": "UA673071230000026004010440556"
+            }
+          ],
+          "accountHolder": {
+            "identifier": {
+              "legalName": {
+                "uk_UA": "Товариство з обмеженою відповідальністю \"КІХ МЕНЕДЖМЕНТ\""
+              },
+              "scheme": "UA-EDR",
+              "id": "40533224"
+            },
+            "name": {
+              "uk_UA": "Товариство з обмеженою відповідальністю \"КІХ МЕНЕДЖМЕНТ\""
+            }
+          },
+          "bankName": {
+            "uk_UA": "АТ \"ВСТ БАНК \""
+          },
+          "currency": "UAH",
+          "id": "d42fb30667cf422092a0cd9bb9391607"
+        }
+      ]
+    }
+  ],
+  "questions": [],
+  "_meta": {
+    "systemDateModified": "2026-11-01T18:00:03.694000Z"
+  },
+  "description": {
+    "uk_UA": "Продаж виробничих (нежитлових) приміщень загальною площею 1893,2 кв.м., що розташовані за адресою: м. Одеса, вул. Долинська, буд.5а. Виробничі приміщення складаються з комплексу будівель, що розташовані на земельній ділянці площею 5720 кв.м. Територія огороджена. Електрична енергія потужність: 70 кВт. Територія підійде для розміщення виробництва, будівництва складів, логістичного центру, торгового центру, тощо "
+  },
+  "guarantee": {
+    "amount": 455000.0,
+    "currency": "UAH"
+  },
+  "questionPeriod": {
+    "endDate": "2026-11-01T16:00:00.000000Z",
+    "startDate": "2026-10-08T10:20:53.459000Z"
+  },
+  "title": {
+    "uk_UA": "Продаж виробничих приміщень площею 1893,2 кв.м., за адресою: м. Одеса, вул. Долинська, буд.5а"
+  },
+  "contracts": [],
+  "archiveId": "6ae77e23fb514e8a23e0f380",
+  "_protected": false,
+  "enquiryPeriod": {
+    "endDate": "2026-11-01T16:00:00.000000Z",
+    "startDate": "2026-10-08T10:20:53.459000Z"
+  },
+  "sellingMethod": "commercialSell-english",
+  "valueAddedTaxCharged": false,
+  "auctionPeriod": {
+    "startDate": "2026-11-02T10:35:00.000000Z"
+  },
+  "tenderPeriod": {
+    "endDate": "2026-11-01T18:00:00.000000Z",
+    "startDate": "2026-10-08T10:20:53.459000Z"
+  },
+  "value": {
+    "amount": 9100000.0,
+    "valueAddedTaxIncluded": false,
+    "currency": "UAH"
+  },
+  "x_documentRequirements": {
+    "uk_UA": "Згідно регламенту торгового майданчику та вимог законодавства. Витрати пов'язані з оформленням права власності на об'єкт нерухомості несе переможець торгів."
+  },
+  "owner": "polonex.com.ua",
+  "additionalInformation": [],
+  "minimalStep": {
+    "amount": 91000.0,
+    "currency": "UAH"
+  },
+  "registrationFee": {
+    "amount": 1700.0,
+    "currency": "UAH"
+  },
+  "dateModified": "2026-11-01T18:00:03.694000Z",
+  "lotId": "1",
+  "datePublished": "2026-10-08T10:20:53.453000Z",
+  "cancellations": [],
+  "auctionId": "CSE001-UA-20261008-61071",
+  "metaInfo": {
+    "directions": [
+      "commercialSell"
+    ],
+    "categories": [
+      "realEstateSale"
+    ],
+    "auctionTypes": [
+      "english"
+    ]
+  },
+  "sellingEntity": {
+    "identifier": {
+      "legalName": {
+        "uk_UA": "Товариство з обмеженою відповідальністю \"КІХ МЕНЕДЖМЕНТ\""
+      },
+      "scheme": "UA-EDR",
+      "id": "40533224"
+    },
+    "address": {
+      "streetAddress": {
+        "uk_UA": "Пушкінська, буд.44"
+      },
+      "postalCode": "65045",
+      "locality": {
+        "uk_UA": "Одеса"
+      },
+      "countryName": {
+        "uk_UA": "Україна"
+      },
+      "region": {
+        "uk_UA": "Одеська область"
+      }
+    },
+    "contactPoint": {
+      "name": {
+        "uk_UA": "Тетяна Тетяна "
+      },
+      "telephone": "+380487099109",
+      "email": "7294840@i.ua"
+    },
+    "name": {
+      "uk_UA": "Товариство з обмеженою відповідальністю \"КІХ МЕНЕДЖМЕНТ\""
+    }
+  },
+  "minNumberOfQualifiedBids": 1,
+  "awards": [],
+  "tenderAttempts": 1,
+  "bids": [],
+  "x_additionalInformation": {
+    "uk_UA": "Об'єкт знаходится під іпотекою. Згода іпотекадержателя є в наявності. "
+  },
+  "items": [
+    {
+      "additionalClassifications": [
+        {
+          "scheme": "CPVS",
+          "description": {
+            "en_US": "Private",
+            "uk_UA": "Приватний"
+          },
+          "id": "DA04-3"
+        }
+      ],
+      "itemProps": {
+        "totalObjectArea": 1893.2,
+        "itemPropsType": "realEstate",
+        "usableArea": 1893.2,
+        "serviceElectricity": true,
+        "generalCondition": "задовільний",
+        "totalBuildingArea": 1893.2,
+        "serviceWater": true
+      },
+      "unit": {
+        "code": "MTK",
+        "name": {
+          "en_US": "square metre",
+          "uk_UA": "метри квадратні"
+        }
+      },
+      "quantity": 1.0,
+      "address": {
+        "streetAddress": {
+          "uk_UA": "вул. Долинська, буд.5а"
+        },
+        "postalCode": "65000",
+        "locality": {
+          "uk_UA": "Одеса"
+        },
+        "countryName": {
+          "uk_UA": "Україна"
+        },
+        "region": {
+          "uk_UA": "Одеська область"
+        },
+        "addressID": {
+          "scheme": "koatuu",
+          "name": {
+            "uk_UA": "ОДЕСА"
+          },
+          "id": "5110100000"
+        }
+      },
+      "commercialSellItemType": "assets",
+      "description": {
+        "uk_UA": "Продають виробничі (нежитлові) приміщення загальною площею 1893,2 кв.м., що розташовані за адресою: м. Одеса, вул. Долинська, буд.2а. Приміщення складаються з комплексу будівель, що розташовані на земельній ділянці площею 5720 кв.м. Земельна ділянка огороджена. Потужність елек. сист. 70 кВт. Приміщення можна використовувати під будь -який вид діяльності. Наявний майданчик для транспортних засобів, можна використовувати як виробничу базу, тощо."
+      },
+      "location": {
+        "elevation": "",
+        "latitude": "",
+        "longitude": ""
+      },
+      "id": "413c96660029408098750c5eace18ffa",
+      "registrationDetails": {
+        "registrationStatus": "properlyRegistered",
+        "registrationID": "46736273",
+        "registrationDate": "2022-02-16T12:39:00.000000Z"
+      },
+      "classification": {
+        "scheme": "CAV",
+        "description": {
+          "en_US": "Real Estate",
+          "uk_UA": "Нерухоме майно"
+        },
+        "id": "04000000-8"
+      }
+    }
+  ],
+  "status": "unsuccessful"
+}
