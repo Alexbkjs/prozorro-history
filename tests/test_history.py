@@ -2,7 +2,7 @@ from collections.abc import Callable
 from dataclasses import replace
 from typing import Any
 
-from prozorro_history.history import resolve_chain
+from prozorro_history.history import resolve_chain, summarize_chain
 from prozorro_history.normalize import Lot, normalize
 
 LoadFixture = Callable[[str], dict[str, Any]]
@@ -40,3 +40,48 @@ def test_circular_loop_with_lots_pointing_at_each_other(
         fake_lot_b.auction_id,
         fake_lot_a.auction_id,
     ]
+
+
+def test_full_chain(load_fixture: LoadFixture) -> None:
+    lots = {aid: normalize(load_fixture(aid)) for aid in CHAIN_IDS}
+    chain = resolve_chain(lots["BRD001-UA-20261010-26702"], lots.get)
+    info = summarize_chain(chain)
+    assert info.chain_id == "BRE001-UA-20260525-60638"
+    assert info.attempt_no == 3
+    assert info.failed_attempts == 2
+    assert info.price_change_vs_first_pct == -40.0
+    assert info.chain_complete is True
+
+
+def test_single_first_attempt(load_fixture: LoadFixture) -> None:
+    chain = [normalize(load_fixture("CSE001-UA-20261003-41261"))]
+    info = summarize_chain(chain)
+    assert info.chain_id == "CSE001-UA-20261003-41261"
+    assert info.attempt_no == 1
+    assert info.failed_attempts == 1
+    assert info.price_change_vs_first_pct == 0.0
+    assert info.chain_complete is True
+
+
+def test_missing_link(load_fixture: LoadFixture) -> None:
+    chain = [normalize(load_fixture("BRE001-UA-20261013-44974"))]
+    info = summarize_chain(chain)
+    assert info.attempt_no == 3
+    assert info.failed_attempts == 1
+    assert info.price_change_vs_first_pct == 0.0
+    assert info.chain_complete is False
+
+
+def test_missing_price(load_fixture: LoadFixture) -> None:
+    lot = normalize(load_fixture("BRE001-UA-20261013-44974"))
+    lot_with_no_price = replace(lot, start_price=None)
+    chain = [lot_with_no_price]
+    info = summarize_chain(chain)
+    assert info.price_change_vs_first_pct is None
+
+
+def test_price_change_keeps_one_decimal(load_fixture: LoadFixture) -> None:
+    lot = normalize(load_fixture("CSE001-UA-20261003-41261"))
+    chain = [replace(lot, start_price=100.0), replace(lot, start_price=87.66)]
+    info = summarize_chain(chain)
+    assert info.price_change_vs_first_pct == -12.3
