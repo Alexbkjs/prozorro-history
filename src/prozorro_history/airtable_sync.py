@@ -46,6 +46,8 @@ def push_rows(table: Table, rows: list[dict[str, Any]]) -> tuple[int, int]:
     result = table.batch_upsert(
         records,
         key_fields=["auction_id"],
+        # replace=False: only the fields we send are changed. With True,
+        # Airtable would empty Reviewed/Notes on every sync.
         replace=False,
     )
     created = len(result["createdRecords"])
