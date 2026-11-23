@@ -89,6 +89,12 @@ def get_lot(conn: sqlite3.Connection, auction_id: str) -> Lot | None:
     return Lot(**{c: row[c] for c in LOT_COLUMNS})
 
 
+def all_lots(conn: sqlite3.Connection) -> list[Lot]:
+    """Return every lot in the database."""
+    rows = conn.execute("SELECT * FROM lots").fetchall()
+    return [Lot(**{c: row[c] for c in LOT_COLUMNS}) for row in rows]
+
+
 def get_cursor(conn: sqlite3.Connection) -> str | None:
     row = conn.execute("SELECT value FROM state WHERE key = 'cursor'").fetchone()
     if row is None:

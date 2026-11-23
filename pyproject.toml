@@ -32,4 +32,5 @@ testpaths = ["tests"]
 
 [tool.mypy]
 strict = true
+files = ["src", "tests"]
 

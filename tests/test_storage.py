@@ -4,6 +4,7 @@ from typing import Any
 
 from prozorro_history.normalize import normalize
 from prozorro_history.storage import (
+    all_lots,
     connect,
     get_cursor,
     get_lot,
@@ -86,3 +87,17 @@ def test_cursor_starts_empty_and_round_trips() -> None:
     assert get_cursor(conn) is None
     set_cursor(conn, "2026-11-20T10:00:00.000000Z")
     assert get_cursor(conn) == "2026-11-20T10:00:00.000000Z"
+
+
+def test_all_lots_returns_every_lot(load_fixture: LoadFixture) -> None:
+    raw = load_fixture("CSE001-UA-20261003-41261")
+    lot_a = normalize(raw)
+    lot_b = replace(lot_a, procedure_id="123", auction_id="456")
+    conn = connect(":memory:")
+
+    upsert_lot(conn, lot_a, raw)
+    upsert_lot(conn, lot_b, raw)
+
+    lots = all_lots(conn)
+    assert len(lots) == 2
+    assert {lot.auction_id for lot in lots} == {lot_a.auction_id, lot_b.auction_id}
