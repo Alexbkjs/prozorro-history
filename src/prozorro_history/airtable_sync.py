@@ -2,6 +2,8 @@
 
 from typing import Any
 
+from pyairtable import Table
+
 from prozorro_history.history import ChainInfo
 from prozorro_history.normalize import Lot
 
@@ -30,3 +32,22 @@ def to_airtable_fields(lot: Lot, info: ChainInfo) -> dict[str, Any]:
         "api_url": lot.api_url,
         "auction_date": lot.auction_date[:10] if lot.auction_date is not None else None,
     }
+
+
+def push_rows(table: Table, rows: list[dict[str, Any]]) -> tuple[int, int]:
+    """Create or update rows in Airtable, matched on auction_id.
+
+    Returns (created, updated) counts. Running it twice with the same rows
+    gives (0, n) the second time: no duplicates.
+    """
+    if not rows:
+        return (0, 0)
+    records = [{"fields": row} for row in rows]
+    result = table.batch_upsert(
+        records,
+        key_fields=["auction_id"],
+        replace=False,
+    )
+    created = len(result["createdRecords"])
+    updated = len(result["updatedRecords"])
+    return (created, updated)
