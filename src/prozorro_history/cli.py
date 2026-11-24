@@ -1,7 +1,16 @@
+"""Command-line entry point: uv run prozorro-history <command>.
+
+Commands: fetch (feed -> SQLite), sync (SQLite -> Airtable),
+verify (re-check a sample against Prozorro.Sale).
+"""
+
 import argparse
 import logging
+import random
 import sqlite3
 from typing import Any
+
+import httpx
 
 from prozorro_history import storage
 from prozorro_history.airtable_sync import open_table, push_rows, to_airtable_fields
@@ -9,6 +18,7 @@ from prozorro_history.client import ProzorroClient
 from prozorro_history.filters import is_real_estate
 from prozorro_history.history import Lookup, resolve_chain, summarize_chain
 from prozorro_history.normalize import Lot, normalize
+from prozorro_history.verify import classify
 
 DEFAULT_DB = "data/prozorro.db"
 log = logging.getLogger("prozorro_history")
@@ -46,6 +56,7 @@ def make_lookup(conn: sqlite3.Connection, client: ProzorroClient) -> Lookup:
             return lot
         raw = client.get_by_auction_id(auction_id)
         if raw is None:
+            log.info("%s: earlier attempt not found in the API", auction_id)
             return None
         lot = normalize(raw)
         with conn:
@@ -77,6 +88,57 @@ def cmd_sync(args: argparse.Namespace) -> None:
     log.info("sync done: %d created, %d updated", created, updated)
 
 
+def cmd_verify(args: argparse.Namespace) -> None:
+    """Re-fetch a random sample of lots and compare them with SQLite.
+
+    Exits with code 1 on a real mismatch or a broken source link, so a cron
+    job or CI can alert on it. "Outdated" lots are not failures.
+    """
+    conn = storage.connect(args.db)
+    lots = [lot for lot in storage.latest_attempts(conn) if is_real_estate(lot)]
+    sample = random.Random(args.seed).sample(lots, min(args.sample, len(lots)))
+
+    counts = {"ok": 0, "outdated": 0, "mismatch": 0, "missing": 0, "bad_link": 0}
+    with ProzorroClient() as client, httpx.Client(timeout=30) as web:
+        for stored in sample:
+            raw = client.get_by_auction_id(stored.auction_id)
+            if raw is None:
+                counts["missing"] += 1
+                log.warning("%s: no longer in the API", stored.auction_id)
+                continue
+
+            if web.get(stored.source_url).status_code != 200:
+                counts["bad_link"] += 1
+                log.warning("%s: source_url does not open", stored.auction_id)
+
+            verdict, problems = classify(stored, normalize(raw))
+            counts[verdict] += 1
+            for p in problems:
+                level = logging.WARNING if verdict == "mismatch" else logging.INFO
+                log.log(
+                    level,
+                    "%s [%s] %s: stored=%r live=%r",
+                    p.auction_id,
+                    verdict,
+                    p.field,
+                    p.stored,
+                    p.live,
+                )
+
+    log.info(
+        "verify: %d checked, %d ok, %d outdated (run fetch), %d MISMATCHED, "
+        "%d missing, %d bad links",
+        len(sample),
+        counts["ok"],
+        counts["outdated"],
+        counts["mismatch"],
+        counts["missing"],
+        counts["bad_link"],
+    )
+    if counts["mismatch"] or counts["bad_link"]:
+        raise SystemExit(1)
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(prog="prozorro-history")
     parser.add_argument(
@@ -94,12 +156,25 @@ def main() -> None:
     p_fetch.set_defaults(func=cmd_fetch)
 
     p_sync = sub.add_parser(
-        "sync", help="Push real-estate lots and their history to Airtable"
+        "sync", help="Push one row per real-estate object to Airtable"
     )
     p_sync.set_defaults(func=cmd_sync)
+
+    p_verify = sub.add_parser(
+        "verify", help="Re-check a random sample against Prozorro.Sale"
+    )
+    p_verify.add_argument(
+        "--sample", type=int, default=20, help="How many lots (default: %(default)s)"
+    )
+    p_verify.add_argument(
+        "--seed", type=int, help="Random seed, to repeat the same sample"
+    )
+    p_verify.set_defaults(func=cmd_verify)
 
     args = parser.parse_args()
     logging.basicConfig(
         level=logging.INFO, format="%(asctime)s %(levelname)s %(message)s"
     )
+    # httpx logs every request at INFO; we log the events that matter ourselves.
+    logging.getLogger("httpx").setLevel(logging.WARNING)
     args.func(args)
