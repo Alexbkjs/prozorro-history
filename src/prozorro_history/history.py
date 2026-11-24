@@ -9,7 +9,7 @@ from prozorro_history.normalize import Lot
 @dataclass(frozen=True, slots=True)
 class ChainInfo:
     chain_id: str  # auction_id of the oldest attempt we found
-    attempt_no: int  # which attempt the newest lot is (1, 2, 3...)
+    attempt_no: int  # number of attempts found by following the links (1, 2, 3...)
     failed_attempts: int  # how many attempts in the chain ended "unsuccessful"
     price_change_vs_first_pct: float | None  # e.g. -40.0; None if a price is missing
     chain_complete: bool  # True if the oldest lot really is attempt 1
@@ -18,7 +18,7 @@ class ChainInfo:
 Lookup = Callable[[str], Lot | None]  # auction_id -> Lot, or None if unknown
 
 
-def resolve_chain(lot: Lot, lookup: Lookup, max_depth: int = 20) -> list[Lot]:
+def resolve_chain(lot: Lot, lookup: Lookup, max_depth: int = 100) -> list[Lot]:
     """Return every attempt we can find for this object, oldest first.
 
     Stops when:
@@ -48,12 +48,16 @@ def resolve_chain(lot: Lot, lookup: Lookup, max_depth: int = 20) -> list[Lot]:
 def summarize_chain(chain: list[Lot]) -> ChainInfo:
     """Summarize a chain from resolve_chain (oldest first).
 
+    attempt_no counts the attempts we actually followed, not the platform's
+    tenderAttempts field: in real data tenderAttempts stops growing at 10
+    while repeat auctions continue for years (e.g. a 39-attempt lease chain).
+
     Known limitation: if a link is missing, chain_id is the oldest attempt we
     *could* find. When the missing attempt is fetched later, chain_id changes.
     """
     first = chain[0]
     last = chain[-1]
-    attempt_no = last.tender_attempts or len(chain)
+    attempt_no = len(chain)
     failed_attempts = sum(1 for x in chain if x.status == "unsuccessful")
     pct = _pct_change(first.start_price, last.start_price)
     complete = first.previous_auction_id is None and (first.tender_attempts or 1) == 1

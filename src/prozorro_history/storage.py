@@ -95,6 +95,24 @@ def all_lots(conn: sqlite3.Connection) -> list[Lot]:
     return [Lot(**{c: row[c] for c in LOT_COLUMNS}) for row in rows]
 
 
+def latest_attempts(conn: sqlite3.Connection) -> list[Lot]:
+    """Lots that no other lot points back to: the newest attempt of each object.
+
+    Older attempts (fetched while walking chains) are excluded, so each object
+    appears once. Uses the idx_lots_previous index.
+    """
+    rows = conn.execute(
+        """
+        SELECT * FROM lots
+        WHERE auction_id NOT IN (
+            SELECT previous_auction_id FROM lots
+            WHERE previous_auction_id IS NOT NULL
+        )
+        """
+    ).fetchall()
+    return [Lot(**{c: row[c] for c in LOT_COLUMNS}) for row in rows]
+
+
 def get_cursor(conn: sqlite3.Connection) -> str | None:
     row = conn.execute("SELECT value FROM state WHERE key = 'cursor'").fetchone()
     if row is None:

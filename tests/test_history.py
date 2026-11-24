@@ -66,7 +66,9 @@ def test_single_first_attempt(load_fixture: LoadFixture) -> None:
 def test_missing_link(load_fixture: LoadFixture) -> None:
     chain = [normalize(load_fixture("BRE001-UA-20261013-44974"))]
     info = summarize_chain(chain)
-    assert info.attempt_no == 3
+    # The platform says attempt 3, but we only found 1: chain_complete=False
+    # tells the reviewer the earlier attempts are missing.
+    assert info.attempt_no == 1
     assert info.failed_attempts == 1
     assert info.price_change_vs_first_pct == 0.0
     assert info.chain_complete is False
@@ -85,3 +87,12 @@ def test_price_change_keeps_one_decimal(load_fixture: LoadFixture) -> None:
     chain = [replace(lot, start_price=100.0), replace(lot, start_price=87.66)]
     info = summarize_chain(chain)
     assert info.price_change_vs_first_pct == -12.3
+
+
+def test_attempt_no_counts_links_not_tender_attempts(
+    load_fixture: LoadFixture,
+) -> None:
+    # Real lease chains keep tenderAttempts at 10 for years; we count links.
+    lot = normalize(load_fixture("CSE001-UA-20261003-41261"))
+    chain = [replace(lot, auction_id=f"a{i}", tender_attempts=10) for i in range(3)]
+    assert summarize_chain(chain).attempt_no == 3

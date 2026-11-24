@@ -8,6 +8,7 @@ from prozorro_history.storage import (
     connect,
     get_cursor,
     get_lot,
+    latest_attempts,
     set_cursor,
     upsert_lot,
 )
@@ -101,3 +102,21 @@ def test_all_lots_returns_every_lot(load_fixture: LoadFixture) -> None:
     lots = all_lots(conn)
     assert len(lots) == 2
     assert {lot.auction_id for lot in lots} == {lot_a.auction_id, lot_b.auction_id}
+
+
+def test_latest_attempts_returns_only_newest_of_chain(
+    load_fixture: LoadFixture,
+) -> None:
+    chain_ids = [
+        "BRE001-UA-20260525-60638",  # attempt 1
+        "BRE001-UA-20260820-86926",  # attempt 2
+        "BRD001-UA-20261010-26702",  # attempt 3 (newest)
+    ]
+    conn = connect(":memory:")
+    for aid in chain_ids:
+        raw = load_fixture(aid)
+        upsert_lot(conn, normalize(raw), raw)
+
+    assert [lot.auction_id for lot in latest_attempts(conn)] == [
+        "BRD001-UA-20261010-26702"
+    ]
