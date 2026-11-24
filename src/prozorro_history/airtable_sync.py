@@ -1,8 +1,10 @@
 """Send lots to Airtable for human review."""
 
+import os
 from typing import Any
 
-from pyairtable import Table
+from dotenv import load_dotenv
+from pyairtable import Api, Table
 
 from prozorro_history.history import ChainInfo
 from prozorro_history.normalize import Lot
@@ -53,3 +55,17 @@ def push_rows(table: Table, rows: list[dict[str, Any]]) -> tuple[int, int]:
     created = len(result["createdRecords"])
     updated = len(result["updatedRecords"])
     return (created, updated)
+
+
+def open_table() -> Table:
+    """Connect to the Airtable table named in .env (current folder)."""
+    load_dotenv(".env")
+    try:
+        token = os.environ["AIRTABLE_TOKEN"]
+        base_id = os.environ["AIRTABLE_BASE_ID"]
+        table_id = os.environ["AIRTABLE_TABLE"]
+    except KeyError as missing:
+        raise SystemExit(
+            f"{missing.args[0]} is not set. Copy .env.example to .env and fill it in."
+        )
+    return Api(token).table(base_id, table_id)
